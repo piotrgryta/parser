@@ -246,7 +246,7 @@ public class EntityToYumlParser {
                         parent = e;
                     }
                     if (!filter.isAggregateRealation(c.getName(), parent.getName(), aggregateRelations))
-                        associateRelations.add(getAssociatesYuml(c, parent));
+                        associateRelations.add(getAggregatesYuml(c, parent));
                 }
             }
         }
