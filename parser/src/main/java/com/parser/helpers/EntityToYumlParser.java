@@ -56,8 +56,7 @@ public class EntityToYumlParser {
         aggregateRelations.forEach(x -> buffer.append(x + ","));
         associateRelations.forEach(x -> buffer.append(x + ","));
 
-        System.out.println(buffer.toString());
-        return null;
+        return buffer.toString();
     }
 
     private String getEnumYuml(EnumEntity e){
